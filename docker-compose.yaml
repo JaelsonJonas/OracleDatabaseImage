@@ -1,0 +1,9 @@
+version: '3'
+services:
+  oracle-db:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: seu-canteiro-oracle-container
+    ports:
+      - '1521:1521'
